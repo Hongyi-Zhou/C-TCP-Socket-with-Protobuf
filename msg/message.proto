@@ -1,4 +1,7 @@
 syntax = "proto2";
+
+package message;
+
 message log_packet {
   required fixed64 log_time =1;
   required fixed32 log_micro_sec =2;

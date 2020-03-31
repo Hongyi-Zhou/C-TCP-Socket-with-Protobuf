@@ -9,7 +9,7 @@
 #include <arpa/inet.h>
 #include <pthread.h>
 #include <unistd.h>
-#include "message.pb.h"
+#include "../msg/message.pb.h"
 #include <iostream>
 #include <google/protobuf/message.h>
 #include <google/protobuf/descriptor.h>
@@ -17,8 +17,8 @@
 #include <google/protobuf/io/coded_stream.h>
 #include <google/protobuf/io/zero_copy_stream_impl_lite.h>
 
-
 using namespace google::protobuf::io;
+using namespace message;
 
 using namespace std;
 int main(int argv, char** argc){

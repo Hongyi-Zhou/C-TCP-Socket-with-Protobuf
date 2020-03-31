@@ -9,13 +9,14 @@
 #include <arpa/inet.h>
 #include <unistd.h>
 #include <pthread.h>
-#include "message.pb.h"
+#include "../msg/message.pb.h"
 #include <iostream>
 #include <google/protobuf/io/coded_stream.h>
 #include <google/protobuf/io/zero_copy_stream_impl.h>
 
 using namespace std;
 using namespace google::protobuf::io;
+using namespace message;
 
 
 void* SocketHandler(void*);
